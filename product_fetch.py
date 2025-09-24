@@ -43,10 +43,11 @@ for product in product_details:
     else:
         stock_detail = "Out of Stock"
     # print(stock_detail)
-
-    product_detail["name"] = prod_name
-    product_detail["price"] = price_tag
-    product_detail["availability"] = stock_detail
+    product_detail={
+        "name": prod_name,
+        "price": price_tag,
+        "availability": stock_detail
+    }
 
     # print(product_detail)
 
